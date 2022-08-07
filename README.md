@@ -27,6 +27,7 @@ and more.
 **Interactive mode(example)**
 
 '''
+
 $ ./console.py
 (hbnb) help
 
@@ -42,6 +43,7 @@ $
 **Non-interactive mode**
 
 '''
+
 $ echo "help" | ./console.py
 (hbnb)
 
