@@ -21,8 +21,64 @@ This first step consists of:
 |Create an object    |(hbnb) create <class>                      | 
 |Show an object      |(hbnb) show <class> <id>                   |
 |Destroy an object   |(hbnb) destroy <class> <id>                |
-|Show all objects,   |(hbnb) all or (hbnb) all <class>           |
-|or all instances of                                             |
-|a class                                                         |
 
 and more.
+
+**Interactive mode(example)**
+
+'''
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb)
+(hbnb)
+(hbnb) quit
+$
+'''
+**Non-interactive mode**
+
+'''
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
+'''
+
+# *Testing*
+Unittests for the HolbertonBnB project are defined in the tests folder. To run the entire test suite simultaneously, execute the following command:
+
+'''
+$ python3 unittest -m discover tests
+'''
+
+Alternatively, you can specify a single test file to run at a time:
+
+'''
+$ python3 unittest -m tests/test_console.py
+'''
+
+# *Authors*
+
+- Admas Girma [Son-OfAnton](https://www.github.com/Son-OfAnton).
+- Wendwosen Dufera [wendecoder](https://www.github.com/wendecoder).
+
+
