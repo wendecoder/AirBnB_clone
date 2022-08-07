@@ -26,7 +26,7 @@ and more.
 
 **Interactive mode(example)**
 
-'''
+```
 
 $ ./console.py
 (hbnb) help
@@ -39,10 +39,10 @@ EOF  help  quit
 (hbnb)
 (hbnb) quit
 $
-'''
+```
 **Non-interactive mode**
 
-'''
+```
 
 $ echo "help" | ./console.py
 (hbnb)
@@ -63,7 +63,7 @@ Documented commands (type help <topic>):
 EOF  help  quit
 (hbnb)
 $
-'''
+```
 
 # *Testing*
 Unittests for the HolbertonBnB project are defined in the tests folder. To run the entire test suite simultaneously, execute the following command:
